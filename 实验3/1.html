@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#Box{
+    width: 40%;
+    height: 200px;
+    border: solid black;
+    margin: 10px;
+}
+#but{
+    background-color:white;
+}
+    </style> 
+</head>
+<body>
+    <div>
+      <input type="button" id="but" value="a">
+      <input type="button" id="but" value="b">
+      <input type="button" id="but" value="c">
+      <div id="Box">111</div>
+      <div id="Box">222</div>
+      <div id="Box">333</div>
+    </div>
+    <script>
+let obt=document.getElementById("but")
+let oBo=document.querySelector("Box")
+oDiv=oBo.querySelectorAll('div')
+// alert(oBo)
+console.log(oDiv)
+for (let i = 0; i < obt.length; i++) {
+   obt
+    
+}
+    </script>
+</body>
+</html>
