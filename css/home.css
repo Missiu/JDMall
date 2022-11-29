@@ -1,0 +1,56 @@
+body{
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+}
+
+/*导航栏开始*/
+.nav{
+    background-color: #e3e4e5;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+.nav_main{
+    width: 1190px;
+    margin: 0 auto;
+    height: 30px;
+}
+.nav_main .nav_right{
+    float: right;
+}
+.nav_main .nav_right li{
+    float: left;
+    padding: 0 7px;
+}
+.nav_main .nav_right li a{
+    color: #999;
+}
+.nav_main .nav_right li a i{
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 5px;
+    line-height: 12px;
+}
+.nav_main .nav_right li .red{
+    color: #f10215;
+}
+.nav_main .nav_right .li_spacer span{
+    color: #999;
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    opacity: 0.2;
+}
+.nav_left{
+    float: left;
+}
+.nav_left i{
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+}
+.nav_left span{
+    color: #999;
+    font-size: 12px;
+}
+/*导航栏结束*/
