@@ -2,7 +2,7 @@ body{
     font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
 }
 
-/*导航栏开始*/
+/* 导航栏开始
 .nav{
     background-color: #e3e4e5;
     height: 30px;
@@ -52,5 +52,5 @@ body{
 .nav_left span{
     color: #999;
     font-size: 12px;
-}
+} */
 /*导航栏结束*/
