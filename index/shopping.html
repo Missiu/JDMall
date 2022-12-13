@@ -1,65 +1,827 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css引入 -->
-    <link rel="stylesheet" href="/css/shoping.css" />
-    <!-- 全局样式引入 -->
-    <link rel="stylesheet" href="/css/rest.css" />
-    <!-- icon引入 -->
-    <link rel="stylesheet" href="/css/icon/icon.css" />
-    <title>商品详情页</title>
+  <meta charset="UTF-8">
+  <title>watch</title>
+  <link rel="Shortcut Icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="/css/shoping.css">
+  <link rel="stylesheet" type="text/css" href="/css/rest.css">
+  <link rel="stylesheet" type="text/css" href="/css/icon/style.css">
+  <script type="text/javascript" src="/index/shopping.js"></script>
+  
+  
 </head>
 <body>
-    <div class="menu">
-        <div class="list">
-            <ul>
-                <li><a href="">分类1</a></li>
-                <div class="div_span">></div>
-                <li><a href="">分类2</a></li>
-                <div class="div_span">></div>
-                <li><a href="">分类3</a></li>
-                <div class="div_span">></div>
-                <li><a href="">分类4</a></li>
-            </ul>
-            
-            <div class="list_right">
-            <div class="div_span1">关注店铺</div>
-            <img class="img_icon" src="/css/images/shoucang.png" alt="">
-            <div class="div_span1">联系客服</div>
-            <img class="img_icon" src="/css/images/kefu.png" alt="">
+  <!-- 屏幕右方固定按钮 -->
+  <div class="righter"></div>
+  <div class="righter1">
+    <li><i class="icon-user">&#xe973;</i></li>
+    <li><i class="icon-cart">&#xe93a;</i></li>
+    <li><i class="icon-heart">&#xe9dc;</i></li>
+    <li><i class="icon-history">&#xe94f;</i></li>
+    <li><i class="icon-bubbles">&#xe96e;</i></li>
+    <li><i class="icon-reddit">&#xead5;</i></li>
+    <li><i class="icon-pencil">&#xe905;</i></li>
+  </div>
+  <!-- 回到顶部 -->
+  <div class="righter2">
+    <a href="#" style="text-decoration: none;color: #E3E4E5">
+    <i class="icon-circle-up1">&#xea4d;</i>
+    </a>  
+  </div>
+  <!-- 网页上方内容 -->
+  <header>
+    <!-- 导航栏 -->
+     <div id="daohanglan">
+        <div style="width: 1190px;margin: auto;">
+          <!-- 导航选项 -->
+          <div style="text-align: left;color: #999999;font-size: 12px;line-height: 30px;">
+            <div style="float: left;">
+              <i class="icon-home">&#xe900;</i>
+              <a href="jd.html" style="text-decoration: none;color: #999999">京东首页</a>
+            </div>
+            <div id="dingwei" style="float: left;" onmouseenter="dingweijs1()" onmouseleave="dingweijs2()">
+              <i class="icon-location1"  style="color: #999999">&#xe949;</i>
+              <a style="margin-left: 0">北京</a>
+            </div>
+            <div style="float: right;">
+            <div class="aaa"><a id="login" href="login.html" target="_blank">你好，请登录</a></div>
+            <div class="aaa" style="color: #EF3E15;">免费注册</div>
+            <div class="aaa" >|</div>
+            <div class="aaa">我的订单</div>
+            <div class="aaa" >|</div>
+            <div id="myJd" onmouseenter="myJdEnter()" onmouseleave="myJdLeave()" class="aaa">我的京东<i class="icon-location1" >&#xea52;</i></div>
+            <div class="aaa" >|</div>
+            <div class="aaa">京东会员</div>
+            <div class="aaa" >|</div>
+            <div id="qycg" class="aaa" onmouseenter="qycgEnter()" onmouseleave="qycgLeave()">企业采购<i class="icon-location1" >&#xea52;</i></div>
+            <div class="aaa" >|</div>
+            <div id="khfw" class="aaa" onmouseenter="khfwEnter()" onmouseleave="khfwLeave()">客户服务<i class="icon-location1" >&#xea52;</i></div>
+            <div class="aaa" >|</div>
+            <div id="wzdh" class="aaa" onmouseenter="wzdhEnter()" onmouseleave="wzdhLeave()">网站导航<i class="icon-location1" >&#xea52;</i></div>
+            <div class="aaa" >|</div>
+            <div class="aaa">手机京东</div>
+          </div>
         </div>
+     </div>
+   </header>
+<!-- 网页主要内容 -->
+  <div id="main">
+    <!-- 导航栏弹出框 -->
+    <!-- 定位 -->
+    <div id="dingwei1" onmouseenter="dingweijs1()" onmouseleave="dingweijs2()">
+      
+        <br>
+        <a style="margin-left: 16px;">北京</a><a>上海</a><a>天津</a><a>重庆</a><a>河北</a><br><br>
+        <a style="margin-left: 16px;">山西</a><a>河南</a><a>辽宁</a><a>吉林</a><a>黑龙江</a><br><br>
+        <a style="margin-left: 16px;">内蒙</a><a>江苏</a><a>山东</a><a>安徽</a><a>浙江</a><br><br>
+        <a style="margin-left: 16px;">福建</a><a>湖北</a><a>湖南</a><a>广东</a><a>广西</a><br><br>
+        <a style="margin-left: 16px;">北京</a><a>上海</a><a>天津</a><a>重庆</a><a>河北</a><br><br>
+    
+      <div></div>
+    </div>
+    <!-- 我的京东 -->
+    <div id="myJd1" onmouseenter="myJdEnter()" onmouseleave="myJdLeave()">
+        <div class="myJd1_a">
+          <div class="myJd1_b">
+            <p>待处理订单</p><p>返修退换货</p><p>降价商品</p>
+          </div>
+          <div class="myJd1_b">
+            <p>消息</p><p>我的问答</p><p>我的交往</p>
+          </div>
+        </div>
+        <div class="myJd1_a" style="border:none;">
+          <div class="myJd1_b">
+            <p>我的京豆</p><p>我的优惠券</p>
+          </div>
+          <div class="myJd1_b">
+            <p>我的白条</p><p>我的理财</p>
+          </div>
         </div>
     </div>
-
-    <div class="product">
-        <div class="product_intro">
-            <div class="preview">
-                <div>
-                    <img class="img" src="/css/images/dd1a8af47c519198.jpg" alt="">
-                </div>
-                <div>
-                    <img class="s_img" src="/css/images/s_img (1).jpg" alt="">
-                
-                </div>
-            </div>
-
-            <div class="summary">
-
-
-            </div>
-            
-            <div class="extra">
-
-            </div>
-
+    <!-- 企业采购 -->
+    <div id="qycg1" onmouseenter="qycgEnter()" onmouseleave="qycgLeave()">
+        <div class="qycg_a">
+          <p>企业购</p><p>工业品</p>
         </div>
-
+        <div class="qycg_b">
+          <p>商用场景观</p><p>礼品卡</p>
+        </div>
     </div>
+    <!-- 客户服务 -->
+    <div id="khfw1" onmouseenter="khfwEnter()" onmouseleave="khfwLeave()">
+      <div id="khfw1_a">
+        <b>客户</b>
+      </div>
+      <div id="khfw1_b">
+        <div class="khfw1_b1">
+            <p>帮助中心</p><p>在线客服</p><p>电话客服</p><p>金融咨询</p>
+          </div>
+          <div class="khfw1_b1">
+            <p>售后服务</p><p>意见建议</p><p>客服邮箱</p><p>全球售客服</p>
+          </div>
+      </div>
+      <div id="khfw1_a">
+        <b>商户</b>
+      </div>
+      <div id="khfw1_c">
+        <div class="khfw1_b1">
+            <p>合作招商</p><p>商家后台</p><p>商家帮助</p>   
+          </div>
+          <div class="khfw1_b1">
+            <p>学习中心</p><p>京表工作台</p><p>规则平台</p>
+          </div>
+      </div>
+    </div>
+    <!-- 网站导航 -->
+    <div id="wzdh1" onmouseenter="wzdhEnter()" onmouseleave="wzdhLeave()">
+      <div id="wzdh1_a">
+        <ul style="color: #666666">
+          <b>特色主题</b>
+        </ul>
+        <ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul>
+      </div><div id="wzdh1_a">
+        <ul style="color: #666666">
+          <b>行业频道</b>
+        </ul>
+         <ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul>
+      </div><div id="wzdh1_a">
+        <ul style="color: #666666">
+          <b>生活服务</b>
+        </ul>
+        <ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul>
+      </div>
+      <div id="wzdh1_a" style="border:none;">
+        <ul style="color: #666666">
+          <b>更多精选</b>
+        </ul>
+         <ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul><ul>
+          <li>京东试用</li><li>京东金融</li><li>全球售</li><li>国际站</li>
+        </ul>
+      </div>
+    </div>  
+    <!-- 导航栏弹出框结束 -->
+    <div id="mainHeader" style="z-index: 1">
+      <!-- 搜索框 -->
+      <div id="logo">
+        <img src="/css/images/logo1.png">
+      </div>
+      <div id="search">
+        <div class="aad">
+          <input type="text" value="" placeholder="天梭表" class="aab">
+        </div>
+        <div class="aac">
+          <i class="icon-search" >搜本站</i>
+        </div>
+         <div class="aac" style="background-color: #474E5C;">
+          <i class="icon-search" >搜本店</i>
+        </div>
+        <div class="aae">
+            <i class="icon-canera" >&#xe90f;</i>
+        </div>
+      </div>
+      <!-- 购物车 -->
+      <div id="GWC">
+        <i class="icon-cart" >&#xe93a;</i>
+        &nbsp;我的购物车
+        <a style="position: relative;bottom: 7px;">0</a>
+      </div>
+      <!-- 搜索框下方关键词 -->
+      <div class="aaf">
+        <a >欧米伽</a>
+        <a >万国</a>
+        <a >NOMOS</a>
+        <a >RADO</a>
+        <a >DW</a>
+        <a >泰格豪雅</a>
+        <a >天梭</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px;overflow: hidden;">
+    <img src="/css/images/aa1.jpg" width="" style="width:1920px;margin:0 calc(50% - 960px);">
+  </div>
+<!-- 导航栏 -->
+  <div id="watch_daohang">
+    <div class="meau">
+      <ul>
+        <li>首页</li>
+        <li>全部分类</li>
+        <li>全部款式</li>
+        <li>店铺爆款</li>
+        <li>机械表</li>
+        <li>男士手表</li>
+        <li>女士腕表</li>
+        <li>情侣对表</li>
+      </ul>
+      <div class="watch_search">
+        <div class="watch_s1">
+          <input type="text" value="" placeholder="天梭表" class="watch_s3">
+        </div>
+        <div class="watch_s2">
+          搜索
+        </div>
+      </div>
+    </div>
+ </div>
+ <div class="daohang2">
+      <div class="daohang2_1">
+        <div class="daohang2_left">
+          <a>钟表</a><a>></a>
+          <a>腕表</a><a>></a>
+          <a>瑞表</a><a>></a>
+          <a>艾戈勒（AGELOCER）</a><a>></a>
+          <a>艾戈勒（agelocer）</a>
+        </div>
+        <div class="daohang2_right">
+          <div class="daohang3" >
+            <img src="/css/images/jdhd.png" width="100%">
+          </div>
+          <div >艾戈勒官方旗舰店</div>
+          <div class="daohang3">
+            <img src="/css/images/aa2.png" width="100%">
+          </div>
+          <div style="color: #E33B3E;">9.61<i class=" icon-arrow-up">&#xea34;</i></div>
+          <div ><i class=" icon-bubble2" style="color: #5A93FE;margin-right: 5px;">&#xe970;</i>联系客服</div>
+          <div><i class=" icon-grin" style="color: #E33B3E ;margin-right: 5px;">&#xe9eb;</i>收藏店铺</div>
+        </div>
+      </div>
+  </div>
+  <!-- 商品信息 -->
+  <div id="information">
+    <div class="info_three info_1">
+      <div class="info_1_img">
+        <img src="/css/images/aa3.jpg" width="100%">
+      </div>
+      <div class="info_1_suo">
+        <ul>
+          <li id="info_1_i"><i class=" icon-circle-left1">&#xea51;</i></li>
+          <li><img src="/css/images/suo3.jpg" width="100%"></li>
+          <li><img src="/css/images/suo2.jpg" width="100%"></li>
+          <li><img src="/css/images/suo1.jpg" width="100%"></li>
+          <li><img src="/css/images/suo4.jpg" width="100%"></li>
+          <li><img src="/css/images/suo5.jpg" width="100%"></li>
+          <li id="info_1_i"><i class="icon-circle-right1">&#xea4e;</i></li>
+        </ul>
+      </div>
+      <div class="info_1_bottom">
+        <div style="float: left;">
+          <i class="icon-heart">&#xe9dc;</i>
+          <a>关注</a>
+          <i class="icon-share2">&#xea91;</i></a>
+          <a>分享</a>
+        </div>
+        <div style="float: right;">
+          <a>举报</a>
+        </div>
+      </div>
+    </div>
+    <div class="info_three info_2">
+      <div class="info_2_tittle">
+        <a><b>艾戈勒（agelocer）布达佩斯系列瑞士进口手表男士 时尚休闲多功能商务男表全自动机械表带日历 银壳黑皮带 动能指示 4101A1 </b></a>
+      </div>
+      <div class="info_2_news">
+        <a style="color: #EF3E15">【2775秒杀 仅限200只】</a>
+        <a style="text-decoration: underline;color: #5E69AD;">【12月30日16点 火爆开抢】超级秒杀 来自瑞士的制表大师</a>
+      </div>
+      <div class="info_2_miaosha">
+        <div style="float: left;">
+          <i class="icon-alarm">&#xe952;</i>
+          <a>京东秒杀</a>
+        </div>
+        <div class="info_2_daojishi">
+          <a>距离结束</a>
+          <span>16</span><a>:</a>
+          <span>12</span><a>:</a>
+          <span>54</span>
+        </div>
+      </div>
+      <!-- 京东秒杀下方详情信息 -->
+      <div class="info_2_miaoshaInfo">
+         <div class="miaoshaInfo1">
+           <div class="miaoshaInfo_left">京&nbsp;东&nbsp;价</div>
+           <div class="miaoshaInfo_middle">
+             <a style="color: #E4393C;font-size: 12px;">￥</a>
+             <a style="color: #E4393C;font-size: 20px;">3199.00</a>
+             <a id="jiangjia">降价通知</a>
+           </div>
+           <div class="miaoshaInfo_right">
+             <p style="font-size: 13px;">累计评价</p>
+             <p id="leiji">3000+</p>
+           </div>
+         </div>
+         <div class="miaoshaInfo2">
+            <div class="miaoshaInfo2_a">优&nbsp;惠&nbsp;券</div>
+            <div class="miaoshaInfo2_b">满2500减200</div>
+            <div class="miaoshaInfo2_b">满4000减300</div>
+            <div class="miaoshaInfo2_b">满5000减400</div>
+            <div class="miaoshaInfo2_c changeColor">更多>></div>
+         </div>
+         <div class="miaoshaInfo3">
+           <div class="miaoshaInfo3_left">促&emsp;&ensp;销</div>
+           <div class="miaoshaInfo3_middle">
+             <div class="miaoshaInfo3_middle_a">
+               <ul>
+                 <li style="color: #DF3033;border:1px solid #DF3033;">跨店铺满减</li>
+                 <li> 满200元减20元，</li>
+                 <li>满500元减50元，</li>
+                 <li>满1000元减100元 </li>
+                 <li class="changeColor">详情>></li>
+               </ul>
+             </div>
+             <div class="miaoshaInfo3_middle_a">
+               <ul>
+                 <li style="color: #DF3033;border:1px solid #DF3033;">满减</li>
+                 <li> 满200元减20元，</li>
+                 <li>满500元减50元，</li>
+                 <li>满1000元减100元 </li>
+                 <li class="changeColor">详情>></li>
+               </ul>
+             </div>
+             <div class="miaoshaInfo3_middle_a">
+              “跨店铺满减” “满减” 仅可在购物车任选其一
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <!-- plus礼包 -->
+      <div id="plusLibao">
+        <a style="color: #999999">PLUS礼包</a>
+        <a>开通PLUS，立享价值140元全品类券礼包</a>
+        <a class="changeColor">详情>></a>
+      </div>
+      <!-- 配送至 -->
+      <div id="peiSongZhi">
+        <div style="float: left;height: 100px;">
+          <a style="color: #999999">配&ensp;&nbsp;送&ensp;&nbsp;至</a>
+        </div>
+        <div style="float: left;">
+          <div>
+            <a style="border:1px solid #CECBCE">北京朝阳区管庄地区 <i class="icon-point-down">&#xea07;</i></a>
+            <a><b>有货</b></a>
+            <a>支持 <i class="icon-point-right">&#xea06;</i></a>
+            <a style="color: #646FB0">货到付款</a>
+            <a style="color: #646FB0">赠运费险</a>
+            <a style="color: #646FB0">特权保障</a>
+            <a style="color: #646FB0">两年质保</a>
+          </div>
+          <div>
+            <a>免运费</a>
+          </div>
+          <div style="width: 500px;margin-left: 10px;">
+          由<span style="color: #DF3033">艾戈勒官方旗舰店</span>负责发货, 并提供售后服务. 今日17:00前完成下单,预计1月8日02:00前发货,1月10日24:00前送达
+          </div>
+        </div>
+      </div>
+      <!-- 选择颜色 -->
+      <div id="xuanZeYanSe">
+        <div class="xuan_left">
+          选择颜色
+        </div>
+        <div class="xuan_right">
+          <div class="xuan_right_a">
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan1.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan2.jpg">
+              <a>银黑面钢带&emsp; 动能指示&emsp; 4102A9</a>
+            </div>
+          </div>
+          <div class="xuan_right_a">
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan3.jpg">
+              <a>金灰黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan4.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+          </div>
+          <div class="xuan_right_a">
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan4.jpg">
+              <a>金灰面钢带&emsp; 动能指示&emsp; 4102A9</a>
+            </div>
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan1.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+          </div>
+          <div class="xuan_right_a">
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan3.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+            <div class="xuan_right_b">
+              <img src="w/css/images/xuan5.jpg">
+              <a>银黑面钢带&emsp; 动能指示&emsp; 4102A9</a>
+            </div>
+          </div>
+          <div class="xuan_right_a">
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan1.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+            <div class="xuan_right_b">
+              <img src="/css/images/xuan4.jpg">
+              <a>银壳黑皮带&emsp;动能指示&emsp; 4101A1</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 增值保障 -->
+      <div id="zengZhiBaoZhang">
+        <div class="zengZhi_left">
+          增值保障
+        </div>
+        <div style="float: left;text-align: center;margin-left: 10px;">
+          <div class="zengZhi_a">
+            <i class="icon-aid-lit" style="color:#415AA5 ">&#xe99a;</i>
+            全保修3年&ensp;￥229
+          </div>
+          <div class="zengZhi_a">
+             <i class="icon-hammer" style="color:#415AA5 ">&#xe998;</i>
+            碎表镜2年&ensp;￥129
+          </div>
+          <div class="zengZhi_a">
+             <i class="icon-clock" style="color:#415AA5 ">&#xe950;</i>
+            换新保2年&ensp;￥259
+          </div>
+        </div>
+      </div>
+      <!-- 白条分期 -->
+      <div id="baiTiaoFenQi">
+        <div class="baiTiao_left">
+          白条分期
+        </div>
+        <div style="float: left;text-align: center;margin-left: 10px;">
+          <div class="baiTiao_a">
+            不分期
+          </div>
+          <div class="baiTiao_a">
+            ￥1066.34*3期
+          </div>
+          <div class="baiTiao_a">
+            ￥266.62*12期
+          </div>
+           <div class="baiTiao_a">
+            ￥149.33*24期
+          </div>
+        </div>
+      </div>
+      <!-- 加入购物车 -->
+      <div id="jiaGou">
+        <div class="jiaGou_left">1
+          <div class="jiaJian">
+            <div class="jia">+</div>
+            <div class="jian">-</div>
+          </div>
+        </div> 
+        <div class="jiaGou_right">
+          <b>加入购物车</b>
+        </div>
+      </div>
+      <div id="wenXinTiShi">
+        温馨提示&emsp;·支持7天无理由退货
+      </div>
+      <!-- 加入购物车结束 -->
+    </div>
+    <div class="info_three info_3">
+      <div class="info_3_top">
+        <a style="float: left;">———</a>
+        <span>看了又看</span>
+        <a style="float: right;">———</a>
+      </div>
+      <div class="info_3_img">
+        <img  src="/css/images/right1.jpg" width="150" height="150">
+        <div><nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
+        </div>
+        <p>￥3199</p>
+      </div>
+      <div class="info_3_img">
+        <img  src="/css/images/right2.jpg" width="150" height="150">
+        <div><nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
+        </div>
+        <p>￥1990</p>
+      </div>
+      <div class="info_3_img">
+        <img  src="/css/images/right3.jpg" width="150" height="150">
+        <div><nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
+        </div>
+        <p>￥2699</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 网页中部内容 -->
+  <div class="watch_middle">
+    <!-- 店长推荐 -->
+    <div id="dianZhangTuiJian">
+      <div id="dianZhangTuiJian_top">
+        <div id="dianzhangtuijian">店长推荐</div>
+      </div>
+      <div id="dianZhangTuiJian_img">
+        <li><img src="/css/images/right1.jpg"><p><b>￥3199.00</b></p>
+        </li>
+        <li><img src="/css/images/right2.jpg"><p><b>￥2199.00</b></p>
+        </li>
+        <li><img src="/css/images/right3.jpg"><p><b>￥3200.00</b></p>
+        </li>
+        <li><img src="/css/images/right4.jpg"><p><b>￥2699.00</b></p>
+        </li>
+        <li><img src="/css/images/right5.jpg"><p><b>￥1899.00</b></p>
+        </li>
+        <li><img src="/css/images/right1.jpg"><p><b>￥1799.00</b></p>
+        </li>
+      </div>
+    </div>
+
+    <!-- 艾戈勒官方旗舰店 商品介绍-->
+    <div style="width: 100%;height: 2000px;">
+      <!-- 旗舰店-->
+      <div id="qiJianDianInfo">
+        <!-- 艾戈勒官方旗舰店 -->
+        <div id="qiJianDian">
+          <div id="qiJianDian_top"><b class="changeColor">艾戈勒官方旗舰店</b>
+            <i style="color: #5B94FE" class="icon-bubbles3">&#xe971;</i>
+          </div>
+          <div id="qiJianDian_middle">
+            <div class="qiJianDian_left"><b>9.62</b></div>
+            <div class="qiJianDian_right">
+              <p>商品评价&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
+              <p>服务态度&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
+              <p>物流速度&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
+            </div>
+          </div>
+          <div id="qiJianDian_bottom">
+            <div class="qiJianDianBottom">
+              <i class=" icon-home3">&#xe902;</i>进店逛逛
+            </div>
+            <div class="qiJianDianBottom">
+              <i class="icon-star-full">&#xe9db;</i>关注店铺
+            </div>
+          </div>
+        </div>
+        <!-- 店内搜索 -->
+        <div id="dianNeiSouSuo">
+           <div id="qiJianDian_top"><b>店内搜索</b></div>
+           <div class="dianNeiSouSuo_guan">
+             关键字：
+             <input type="text" name="" class="input_guan">
+           </div>
+           <div class="dianNeiSouSuo_guan">
+             价&emsp;格：
+             <input type="text" name="" class="input_price">
+             到
+             <input type="text" name="" class="input_price">
+           </div>
+           <div id="dianNeiSouSuo_serchar">
+             搜索
+           </div>
+        </div>
+      </div>
+      <!-- 商品介绍 -->
+      <div id="shangPinInfo">
+        <!-- 商品介绍 -->
+        <div id="shangPinJieShao">
+          <div class="shangPinJieShao_top">
+            <div class="shangPinJieShao_top_1">商品介绍</div>
+            <div class="shangPinJieShao_top_2 changeColor">规格和包装</div>
+            <div class="shangPinJieShao_top_2 changeColor">售后保障</div>
+            <div class="shangPinJieShao_top_2 changeColor">商品评价(3000+)</div>
+            <div class="shangPinJieShao_top_2 changeColor">本店好评商品</div>
+            <div class="shangPinJieShao_top_gou">加入购物车</div>
+          </div>
+          <div class="shangPinJieShao_main">
+            <div class="first_ul" style="margin-top: 30px;">品牌： <a style="color: #6C69B7;">艾戈勒（AGELOCER）</a></div>
+            <div class="first_ul">
+              <li>商品名称：艾戈勒（agelocer）布达</li>
+              <li>商品编号：11198917385</li>
+              <li>店铺： 艾戈勒官方旗舰店</li>
+              <li>商品毛重：1.2kg</li>
+            </div><br>
+             <div class="first_ul">
+              <li>商品产地：瑞士</li>
+              <li>表壳：精钢</li>
+              <li>风格：商务，休闲，时尚，其它</li>
+              <li>功能：日期显示，其它</li>
+            </div><br>
+             <div class="first_ul">
+              <li>防水：50米</li>
+              <li>表盘：圆形</li>
+              <li>机芯：自动机械</li>
+              <li>表底：透底</li>
+            </div><br>
+            <div class="first_ul last_ul">
+              更多参数>>
+            </div>
+          </div>
+        </div>
+        <!-- 图片 -->
+        <div id="shangPinJieShao_img">
+          <img src="/css/images/main1.jpg">
+          <img src="/css/images/main2.jpg">
+          <img src="/css/images/main3.jpg">
+          <img src="/css/images/main4.jpg">
+          <img src="/css/images/main5.jpg">
+        </div>
+      </div>
+    
+    </div>
+
+
+  </div>
+
+   
+     
+                   
+
+<!-- 网页底部内容 -->
+<div id="bottom">
+  <div id="bottom1">
+    <div id="first">
+      <div class="aao">
+        <div class="bottom_ bottom_duo"></div>
+        <a>品类齐全，轻松购物</a>
+      </div>
+      <div class="aao">
+        <div class="bottom_ bottom_kuai"></div>
+        <a>多仓直发，极速配送</a>
+      </div>
+      <div class="aao">
+        <div class="bottom_ bottom_hao"></div>
+        <a>正品行货，精致服务</a>
+      </div>
+      <div class="aao">
+        <div class="bottom_ bottom_sheng"></div>
+        <a>天天低价，畅选无忧</a>
+      </div>
+    </div>
+  </div>
+  <div id="XianXia">
+    <div id="second">
+      <ol>
+        <ul style="margin-left: 10px;">
+          <li style="margin-bottom: 10px"><b>购物指南</b></li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物张向宇</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+        </ul>
+        <ul>
+          <li style="margin-bottom: 10px"><b>配送方式</b></li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物流程张翔宇</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+        </ul>
+        <ul>
+          <li style="margin-bottom: 10px"><b>支付方式</b></li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物程</li>
+          <li>购物流程</li>
+          <li>购物流程涨涨涨</li>
+          <li>购物流程</li>
+        </ul>
+        <ul>
+          <li style="margin-bottom: 10px"><b>售后服务</b></li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+        </ul>
+        <ul>
+          <li style="margin-bottom: 10px"><b>特色服务 </b></li>
+          <li>购物流程</li>
+          <li>购物流程</li>
+          <li>购物流张程</li>
+          <li>购物流程</li>
+          <li>购物程</li>
+          <li>购物流程</li>
+        </ul>
+        <ul class="bottom_ diTu">
+          <li style="margin-bottom: 10px"><b>京东自营覆盖区县</b></li>
+          <li>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</li>
+          
+        </ul>
+      </ol>
+    </div>
+    <div id="third">
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span><a>|</a>
+      <span>关于我们</span>
+    </div>
+    <div id="fourth">
+      <p>
+        <span>京公网安备 11000002000088号</span><a>|</a>
+        <span>京公网安备 11000002000088号</span><a>|</a>
+        <span>京公网安备 11000002000088号</span><a>|</a>
+        <span>京公网安备 11000002000088号</span>
+      </p>
+      <p>
+        <span>互联网出版许可证编号新出网证(京)字150号</span><a>|</a>
+        <span>出版物经营许可证</span><a>|</a>
+        <span>网络文化经营许可证京网文[2014]2148-348号</span><a>|</a>
+        <span>违法和不良信息举报电话：4006561155</span>
+      </p>
+      <p>
+        <span>Copyright © 2004 - 2018  京东JD.com 版权所有</span><a>|</a>
+        <span>消费者维权热线：4006067733&nbsp;&nbsp;经营证照</span><a>|</a>
+        <span>(京)网械平台备字(2018)第00003号</span><a>|</a>
+        <span>营业执照</span>
+      </p>
+      <p>
+        <a class="bottom_qi bottom_a"></a>
+        <span>Global Site</span><a>|</a>
+        <a class="bottom_qi bottom_b"></a>
+        <span>Global Site</span><a>|</a>
+        <a class="bottom_qi bottom_c"></a>
+        <span>Global Site</span><a>|</a>
+        <a class="bottom_qi bottom_d"></a>
+        <span>Global Site</span><a>|</a>
+        <a class="bottom_qi bottom_e"></a>
+        <span>Global Site</span>
+      </p>
+      <p>
+        <span>京东旗下网站：京东钱包</span><a>|</a>
+        <span>京东云</span>
+      </p>
+    </div>
+    <div id="fivth">
+      <p>
+        <a class="bottom_btm bottom_1"></a>
+        <a class="bottom_btm bottom_2"></a>
+        <a class="bottom_btm bottom_3"></a>
+        <a class="bottom_btm bottom_4"></a>
+        <a class="bottom_btm bottom_5"></a>
+      </p>
+    </div>
+    
+  </div>
+  
+  
+</div>
 
 </body>
-
-<script src="/index/shopping.js"></script>
 </html>
