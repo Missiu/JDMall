@@ -1,6 +1,64 @@
 body{
     font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
 }
+/* 顶部开始 */
+#shortcut{
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+#shortcut .w{
+    width: 900px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+.fr{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+.fr .iconfont {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+.iconfont {
+    font-family: iconfont,sans-serif;
+    font-style: normal;
+    -webkit-text-stroke-width: .2px;
+    /* -moz-osx-font-smoothing: grayscale; */
+}
+#shortcut a{
+    color: #999;
+}
+#shortcut li.spacer{
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+#shortcut li{
+    float: left;
+}
+.shortcut_btn{
+    position: relative;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+/* 最顶部结束 */
 /* 头部开始 */
 .header{
     width: 100%;
@@ -101,11 +159,42 @@ outline: none;
    top: 35px;
    left: 0;
    width: 428px;
-   height: 200px;
+   height: auto;
 border: 1px solid #ccc;
 overflow: hidden;
 background-color: #fff;
 box-shadow: 1px 2px 1px ;
+}
+.search-helper p{
+    text-align: left;
+    overflow: hidden;
+    padding: 1px 6px;
+    line-height: 24px;
+    cursor: pointer;
+}
+/* 不懂 */
+#hotwords .style-red{
+    color: #e1251b;
+    white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+/* 不懂意思 */
+}
+#hotwords{
+    display: block;
+    left: 220px;
+    width: 450px;
+    overflow: hidden;
+    position: absolute;
+    top: 65px;
+    height: 20px;
+    line-height: 20px;
+}
+#hotwords a{
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
 }
 button{
     cursor: pointer;
@@ -116,11 +205,73 @@ button{
     height: 120px;
 
 } */
+#settleup{
+    position: absolute;
+    top: 25px;
+    right: 130px;
+}
+#settleup .cw-icon{
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 34px;
+    border-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    border:1px solid #e3e4e5;
+}
+#settleup .cw-icon a{
+    color: #e1251b;
+    transition: color .2s ease
+}
+#navitems {
+    overflow: hidden;
+    position: absolute;
+    left: 203px;
+    bottom: 0;
+    height: 40px;
+    padding-top: 20px;
+}
+#navitems .spacer {
+    overflow: hidden;
+    width: 0;
+    height: 13px;
+}
+#navitems ul{
+    float: left;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#navitems li{
+    float: left;
+    margin-left: 1px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#navitems a {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #333;
+    margin: 0 11px;
+    /* -webkit-transition: color .2s ease; */
+    transition: color .2s ease;
+}
 *{
     margin: 0;
     padding: 0;
 }
-
+/* 头部结束 */
 /*导航栏开始*/
 .nav{
     background-color: #e3e4e5;
