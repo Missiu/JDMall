@@ -1,590 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>京东首页</title>
-    <link rel="icon" href="/css/images/favicon.ico">
-    <link rel="stylesheet" href="/css/home.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO：搜索引擎优化，网站优化三大标签 -->
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta
+      name="Keywords"
+      content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东"
+    />
+    <meta
+      name="description"
+      content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"
+    />
     <link rel="stylesheet" href="/css/rest.css" />
-    <link rel="stylesheet" href="/css/icon/icon.css" />
-    <!-- favicon.ico找图标 -->
-</head>
-
-<body>
-    <!-- 顶部开始 -->
-    <div id="shortcut">
-        <div class="w">
-            <ul class="f1">
-                <li class="shortcut dropdwon">
-                    <a href="">四川</a>
-                </li>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="icon" href="/img/favicon.ico" />
+    <script type="text/javascript" src="/home.js"></script>
+  </head>
+  <body>
+    <!-- 顶部导航条 -->
+    <div class="topbar-wrapper">
+      <div class="topbar w clearfix">
+        <!-- 左侧位置菜单 -->
+        <div class="location">
+          <div class="city">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">山西</a>
+          </div>
+          <!-- 添加一个位置的弹出层 -->
+          <div class="city-location">
+            <ul>
+              <a href="javascript:;">北京</a>
+              <a href="javascript:;">上海</a>
+              <a href="javascript:;">天津</a>
+              <a href="javascript:;">重庆</a>
+              <a href="javascript:;">河北</a>
+              <a class="shanxi" href="javascript:;">山西</a>
+              <a href="javascript:;">河南</a>
+              <a href="javascript:;">辽宁</a>
+              <a href="javascript:;">吉林</a>
+              <a href="javascript:;">黑龙江</a>
+              <a href="javascript:;">内蒙古</a>
+              <a href="javascript:;">江苏</a>
+              <a href="javascript:;">山东</a>
+              <a href="javascript:;">安徽</a>
+              <a href="javascript:;">浙江</a>
+              <a href="javascript:;">福建</a>
+              <a href="javascript:;">湖北</a>
+              <a href="javascript:;">广东</a>
+              <a href="javascript:;">广西</a>
+              <a href="javascript:;">江西</a>
+              <a href="javascript:;">四川</a>
+              <a href="javascript:;">海南</a>
+              <a href="javascript:;">贵州</a>
+              <a href="javascript:;">云南</a>
+              <a href="javascript:;">西藏</a>
+              <a href="javascript:;">陕西</a>
+              <a href="javascript:;">青海</a>
+              <a href="javascript:;">宁夏</a>
+              <a href="javascript:;">新疆</a>
+              <a href="javascript:;">港澳</a>
+              <a href="javascript:;">钓鱼岛</a>
+              <a href="javascript:;">海外</a>
+              <a href="javascript:;">台湾</a>
+              <a href="javascript:;">台湾</a>
+              <a href="javascript:;">台湾</a>
             </ul>
-            <ul class="fr">
-                <li class="shortcut_btn fore1 dropdwon">
-                    <a href="">你好,请登录</a>
-                    &nbsp;&nbsp;
-                    <a href="" class="link-regist">免费注册</a>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore2">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">我的订单</a>
-
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore3">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">我的京东</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore4">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">京东会员</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore5">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">企业采购</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore6">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">商家服务</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore7">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">网站导航</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore8">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">手机京东</a>
-<div class="mobile-static">
-    ::before
-    <div class="mobile-static-qrcode">
-        <img src="./css/images/下载.png" alt="">
+          </div>
+        </div>
+        <!-- 右侧菜单 -->
+        <ul class="shortcut">
+          <li>
+            <a href="#">你好，请登录</a>
+            <a class="zi" href="#">免费注册</a>
+          </li>
+          <li class="line"></li>
+          <li>
+            <a href="#">我的订单</a>
+          </li>
+          <li class="line"></li>
+          <li class="my-jd">
+            <div class="my">
+              <a herf="#">我的京东</a>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <!-- 添加一个我的京东的弹出层 -->
+            <div class="my-list"></div>
+          </li>
+          <li class="line"></li>
+          <li>
+            <a herf="#">京东会员</a>
+          </li>
+          <li class="line"></li>
+          <li class="firm-cg">
+            <div class="firm">
+              <a class="zi" herf="#">企业采购</a>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <!-- 添加一个企业采购的弹出层 -->
+            <div class="firm-list"></div>
+          </li>
+          <li class="line"></li>
+          <li class="server-kh">
+            <div class="server">
+              <span>客户服务</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <!-- 添加一个客户服务的弹出层 -->
+            <div class="server-list"></div>
+          </li>
+          <li class="line"></li>
+          <li class="web-dh">
+            <div class="web">
+              <span>网站导航</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <!-- 添加一个网站导航的弹出层 -->
+            <div class="web-list"></div>
+          </li>
+          <li class="line"></li>
+          <li>
+            <span>手机京东</span>
+            <i class="fas fa-angle-down"></i>
+            <!-- 添加一个二维码 -->
+            <div class="qrcode">
+              <img src="./img/京东.webp" />
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-                        
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore9">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F">网战无障碍</a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
-                <li class="shortcut_btn fore10">
-                    <div>
-                        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F"></a>
-                        <i class="iconfont"></i>
-                    </div>
-                </li>
-                <li class="spacer"></li>
+    <!-- 头部外部容器 -->
+    <div class="header-wrapper">
+      <div class="header w clearfix">
+        <!-- 创建京东logo -->
+        <ul class="logo">
+          <li>
+            <a href="#"><img src="./img/京东.png" /></a>
+          </li>
+        </ul>
+        <!-- 创建搜索框 -->
+        <div class="search-wrapper">
+          <form class="search" action="#">
+            <input class="search-inp" type="text" />
+            <span><i class="fas fa-camera"></i></span>
+            <button class="search-btn" type="text">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- 创建购物车 -->
+        <div class="shop-cart">
+          <div class="shop">
+            <i class="fas fa-shopping-cart"></i>
+            <a class="gouwu" href="#">我的购物车</a>
+          </div>
+        </div>
+        <!-- 创建搜索框下热词 -->
+        <div class="hotwords">
+          <a class="id" href="#">拉杆箱背包</a>
+          <a href="#">沃尔玛</a>
+          <a href="#">食品饮料</a>
+          <a href="#">路由器</a>
+          <a href="#">格力空调</a>
+          <a href="#">中兴屏下</a>
+          <a href="#">安踏宠粉</a>
+          <a href="#">茶酒特惠</a>
+          <a href="#">家装节</a>
+        </div>
+        <!-- 创建总导航 -->
+        <div class="nav">
+          <a class="id" href="#">秒杀</a>
+          <a class="id" href="#">优惠券</a>
+          <a href="#">PLUS会员</a>
+          <a href="#">品牌闪购</a>
+          <a href="#">拍卖</a>
+          <a href="#">京东家电</a>
+          <a href="#">京东超市</a>
+          <a href="#">京东生鲜</a>
+          <a href="#">京东国际</a>
+          <a href="#">京东云</a>
+        </div>
+      </div>
+    </div>
+    <!-- 创建banner容器 -->
+    <div class="banner-wrapper">
+      <div class="banner w clearfix">
+        <!-- 创建左侧导航条 -->
+        <nav class="left-nav">
+          <div class="item">
+            <a href="#">家用电器</a>
+          </div>
+          <div class="item">
+            <a
+              href="file:///D:/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81/%E4%B9%94/%E5%8D%9A%E5%AD%A6%E8%B0%B7%E7%BD%91%E7%AB%99/index.html"
+              >手机</a
+            >
+            <span class="line">/</span>
+            <a href="#">运营商</a>
+            <span class="line">/</span>
+            <a href="#">数码</a>
+          </div>
+          <div class="item">
+            <a href="#">电脑</a>
+            <span class="line">/</span>
+            <a href="#">办公</a>
+          </div>
+          <div class="item">
+            <a href="#">家居</a>
+            <span class="line">/</span>
+            <a href="#">家具</a>
+            <span class="line">/</span>
+            <a href="#">家装</a>
+            <span class="line">/</span>
+            <a href="#">厨具</a>
+          </div>
+          <div class="item">
+            <a href="#">男装</a>
+            <span class="line">/</span>
+            <a href="#">女装</a>
+            <span class="line">/</span>
+            <a href="#">童装</a>
+            <span class="line">/</span>
+            <a href="#">内衣</a>
+          </div>
+          <div class="item">
+            <a href="#">美妆</a>
+            <span class="line">/</span>
+            <a href="#">个护清洁</a>
+            <span class="line">/</span>
+            <a href="#">宠物</a>
+          </div>
+          <div class="item">
+            <a href="#">女鞋</a>
+            <span class="line">/</span>
+            <a href="#">箱包</a>
+            <span class="line">/</span>
+            <a href="#">钟表</a>
+            <span class="line">/</span>
+            <a href="#">珠宝</a>
+          </div>
+          <div class="item">
+            <a href="#">男鞋</a>
+            <span class="line">/</span>
+            <a href="#">运动</a>
+            <span class="line">/</span>
+            <a href="#">户外</a>
+          </div>
+          <div class="item">
+            <a href="#">房产</a>
+            <span class="line">/</span>
+            <a href="#">汽车</a>
+            <span class="line">/</span>
+            <a href="#">汽车用品</a>
+          </div>
+          <div class="item">
+            <a href="#">母婴</a>
+            <span class="line">/</span>
+            <a href="#">玩具乐器</a>
+          </div>
+          <div class="item">
+            <a href="#">食品</a>
+            <span class="line">/</span>
+            <a href="#">酒类</a>
+            <span class="line">/</span>
+            <a href="#">生鲜</a>
+            <span class="line">/</span>
+            <a href="#">特产</a>
+          </div>
+          <div class="item">
+            <a href="#">艺术</a>
+            <span class="line">/</span>
+            <a href="#">礼品鲜花</a>
+            <span class="line">/</span>
+            <a href="#">农资绿植</a>
+          </div>
+          <div class="item">
+            <a href="#">医疗保健</a>
+            <span class="line">/</span>
+            <a href="#">计生情趣</a>
+          </div>
+          <div class="item">
+            <a href="#">图书</a>
+            <span class="line">/</span>
+            <a href="#">文娱</a>
+            <span class="line">/</span>
+            <a href="#">教育</a>
+            <span class="line">/</span>
+            <a href="#">电子书</a>
+          </div>
+          <div class="item">
+            <a href="#">机票</a>
+            <span class="line">/</span>
+            <a href="#">酒店</a>
+            <span class="line">/</span>
+            <a href="#">旅游</a>
+            <span class="line">/</span>
+            <a href="#">生活</a>
+          </div>
+          <div class="item">
+            <a href="#">理财</a>
+            <span class="line">/</span>
+            <a href="#">众筹</a>
+            <span class="line">/</span>
+            <a href="#">白条</a>
+            <span class="line">/</span>
+            <a href="#">保险</a>
+          </div>
+          <div class="item">
+            <a href="#">安装</a>
+            <span class="line">/</span>
+            <a href="#">维修</a>
+            <span class="line">/</span>
+            <a href="#">清洗</a>
+            <span class="line">/</span>
+            <a href="#">二手</a>
+          </div>
+          <div class="item">
+            <a href="#">工业品</a>
+          </div>
+        </nav>
+        <!-- 创建中间轮播图 -->
+        <div id="outer">
+          <!-- 添加轮播图左箭头 -->
+          <button id="prev">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <ul id="imgList">
+            <li>
+              <a href="#"><img src="./img/01.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/02.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/03.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/04.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/05.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/06.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/07.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/08.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/01.jpg" alt="" /></a>
+            </li>
+          </ul>
+          <!-- 添加轮播图右箭头 -->
+          <button id="next">
+            <i class="fas fa-angle-right"></i>
+          </button>
+          <!-- 添加导航点 -->
+          <div id="navDiv">
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+            <a class="navs" href="javascript:;"></a>
+          </div>
+          <!-- 添加轮播图箭头
+                <div class="prev-next">
+                    <a class="prev" href="#"></a>
+                    <a class="next" href="#"></a>
+                </div> -->
+        </div>
+        <!-- 创建小图片 -->
+        <div class="picture">
+          <!-- 添加小图片左箭头 -->
+          <button class="prevs">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <ul class="imgs-list">
+            <li>
+              <a href="#"><img src="./img/1.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/2.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/3.png" /></a>
+            </li>
+          </ul>
+          <!-- 添加小图片箭头
+                <div class="prevs-nexts">
+                    <a class="prevs" href="#"></a>
+                    <a class="nex ts" href="#"></a>
+                </div> -->
+          <!-- 添加小图片右箭头 -->
+          <button class="nexts">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+        <!-- 创建最右侧菜单 -->
+        <div class="user-wrapper">
+          <!-- 最上边用户登录容器 -->
+          <div class="user">
+            <a href="#"><img src="./img/dog.png" /></a>
+            <a class="hi" href="#">Hi~欢迎逛京东！</a>
+            <a class="use" href="#">登录</a>
+            <span class="line">|</span>
+            <a class="us" href="#">注册</a>
+            <a class="new" href="#">新人福利</a>
+            <a class="plus" href="#">PLUS会员</a>
+          </div>
+          <!-- 中间京东快报容器 -->
+          <div class="news">
+            <span>京东快报</span>
+            <a class="more" href="#"
+              >更多
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <ul class="news-list">
+              <li>
+                <a class="title" href="#">热门</a>
+                <a class="new" href="#">大屏全能型办公本，...</a>
+              </li>
+              <li>
+                <a class="title" href="#">热门</a>
+                <a class="new" href="#">备上六神宝宝植物精...</a>
+              </li>
+              <li>
+                <a class="title" href="#">最新</a>
+                <a class="new" href="#">用途广泛的小苏打，...</a>
+              </li>
+              <li>
+                <a class="title" href="#">热评</a>
+                <a class="new" href="#">金河田魔术师机箱，...</a>
+              </li>
             </ul>
+          </div>
+          <!-- 创建右下角图标容器 -->
+          <div class="menu">
+            <ul class="menu-list">
+              <li>
+                <a class="blue" href="#">
+                  <i class="fas fa-mobile-alt"></i> 话费
+                </a>
+              </li>
+              <li>
+                <a class="orange" href="#">
+                  <i class="fas fa-plane"></i> 机票
+                </a>
+              </li>
+              <li>
+                <a class="green" href="#">
+                  <i class="fas fa-hotel"></i> 酒店
+                </a>
+              </li>
+              <li>
+                <a class="orange" href="#">
+                  <i class="fas fa-gamepad"></i> 游戏
+                </a>
+              </li>
+              <li>
+                <a class="green" href="#">
+                  <i class="fas fa-fire"></i> 加油卡
+                </a>
+              </li>
+              <li>
+                <a class="red" href="#">
+                  <i class="fas fa-train"></i> 火车票
+                </a>
+              </li>
+              <li>
+                <a class="green" href="#">
+                  <i class="fas fa-user-alt"></i> 众筹
+                </a>
+              </li>
+              <li>
+                <a class="blue" href="#">
+                  <i class="fas fa-donate"></i> 理财
+                </a>
+              </li>
+              <li>
+                <a class="red" href="#"> <i class="fas fa-file"></i> 白条 </a>
+              </li>
+              <li>
+                <a class="red" href="#"> <i class="fas fa-film"></i> 电影票 </a>
+              </li>
+              <li>
+                <a class="blue" href="#">
+                  <i class="fas fa-suitcase"></i> 企业购
+                </a>
+              </li>
+              <li>
+                <a class="orange" href="#">
+                  <i class="fas fa-wallet"></i> 礼品卡
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- 创建广告容器 -->
+        <div class="ad-wrapper">
+          <!-- 创建左侧京东秒杀 -->
+          <div class="jdms-wrapper">
+            <a href="javascript:;" class="bac">
+              <img src="./img/jdms.png" alt="" />
+            </a>
+            <a href="javascript:;" class="content">
+              <div class="jdms">京东秒杀</div>
+              <div class="dc-wrapper">
+                <span class="dct">16:00</span
+                ><span class="dc">点场 距结束</span>
+              </div>
+              <ul class="djs">
+                <li class="black">
+                  <div id="time1"></div>
+                </li>
+                <li class="mh">:</li>
+                <li class="black">
+                  <div id="time2"></div>
+                </li>
+                <li class="mh">:</li>
+                <li class="black">
+                  <div id="time3"></div>
+                </li>
+              </ul>
+            </a>
+          </div>
+          <!-- 创建中间广告 -->
+          <ul class="ad">
+            <li>
+              <a href="javascript:;">
+                <img src="./img/ad1.webp" alt="" />
+                <span class="name"
+                  >喜钻
+                  白18K金钻戒女/结婚钻石女戒/订婚求婚钻石戒指/单钻经典6爪裸钻纪念日礼物
+                  30分FG色SI-现货闪发</span
+                >
+                <span class="jg">¥3720.00</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/ad2.webp" alt="" />
+                <span class="name"
+                  >贝尔金（Belkin）type-c七合一扩展坞转换器iPadPro iPad mini
+                  苹果Macbook7口华硕联想笔记本扩展器扩展坞</span
+                >
+                <span class="jg">¥359.10</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/ad3.webp" alt="" />
+                <span class="name"
+                  >蛇圣（Holy serpent）
+                  F2蓝牙耳机入耳式双耳无线运动跑步挂脖式适用于苹果华为小米手机通用
+                  炫酷黑2021纳米升级款</span
+                >
+                <span class="jg">¥68.90</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/ad4.webp" alt="" />
+                <span class="name"
+                  >Redmi Note 9 4G 6000mAh大电池 骁龙662处理器 18W快充 烟波蓝
+                  8GB+128GB 智能手机 小米 红米</span
+                >
+                <span class="jg">¥1169.00</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/ad5.webp" alt="" />
+                <span class="name">微软（Microsoft）日版 Xbox Series S</span>
+                <span class="jg">¥2399.00</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 创建固定工具 -->
+        <div class="tool-wrapper">
+          <ul class="tool">
+            <li>
+              <a href="javascript:;">京东秒杀</a>
+            </li>
+            <li>
+              <a href="javascript:;">特色优选</a>
+            </li>
+            <li>
+              <a href="javascript:;">频道广场</a>
+            </li>
+            <li>
+              <a href="javascript:;">为你推荐</a>
+            </li>
+            <li>
+              <i class="fab fa-waze"></i>
+              <a href="javascript:;">客服</a>
+            </li>
+            <li>
+              <i class="fa fa-pencil-alt"></i>
+              <a href="javascript:;">反馈</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- 头部开始 -->
-    <div class="header">
-        <div class="wrap header">
-            <div class="logo">
-                <a href="" class="logo_lk"></a>
-            </div>
-            <div class="" id="search">
-                <!-- //这里是一个嵌套两个div在后面吸顶可以用到空的class -->
-                <div class="search-m">
-                    <div class="search_logo"></div>
-                    <!-- 这里是为logo吸顶做的div -->
-                    <div class="form">
-                        <div class="search-helper"></div>
-                        <input type="text" class="keyword" placeholder="小米手机">
-                        <span class="upload-bg"><a href=""></a></span>
-                        <button class="button">
-                            <span class="iconfont"></span>
-                        </button>
-                    </div>
-                    <div id="settleup" class="dropdown">
-                        <div class="cw-icon">
-                            <i></i>
-                            <a href="https://passport.jd.com/" target="_blank">我的购物车</a>
-                        </div>
-                        <div class="dropdown-layer"></div>
-                    </div>
-                </div>
-
-            </div>
-            <div id="hotwords">
-                <a href="" class="style-red">家电超品日</a>
-                <a href="">新风空调</a>
-                <a href="">vivo X90</a>
-                <a href="">全球买手</a>
-                <a href="">红顶奖</a>
-                <a href="">年终宠粉</a>
-                <a href="">京东京造</a>
-            </div>
-            <div class="navitems">
-                <div class="spacer"></div>
-                <ul id="navitem-group1">
-                    <li>
-                        <a href="https://chaoshi.jd.com/">京东超市</a>
-                    </li>
-                    <li>
-                        <a href="https://a.jd.com/">优惠卷</a>
-                    </li>
-                    <li>
-                        <a href="https://miaosha.jd.com/">秒杀</a>
-                    </li>
-                    <li>
-                        <a href="https://jiadian.jd.com/">京东家电</a>
-                    </li>
-                </ul>
-                <div class="spacer"></div>
-                <ul id="navitem-group2">
-                    <li>
-                        <a href="https://chaoshi.jd.com/">京东生鲜</a>
-                    </li>
-                    <li>
-                        <a href="https://a.jd.com/">PLUS会员</a>
-                    </li>
-                    <li>
-                        <a href="https://miaosha.jd.com/">进口好物</a>
-                    </li>
-                    <li>
-                        <a href="https://jiadian.jd.com/">品牌闪购</a>
-                    </li>
-                </ul>
-                <div class="spacer"></div>
-                <ul id="navitem-group3">
-                    <li>
-                        <a href="https://chaoshi.jd.com/">拍卖</a>
-                    </li>
-                    <li>
-                        <a href="https://a.jd.com/">京东五金城</a>
-                    </li>
-                </ul>
-                <div class="spacer"></div>
-            </div>
-        </div>
-
-        <script src="home.js"></script>
-</body>
-
+  </body>
 </html>
-
-
-
-
-<!-- 结束 -->
-<!-- <!DOCTYPE html>
-=======
- <!DOCTYPE html>
->>>>>>> 0bbcd89ff278e3b3dee3abc26a94bfdd8b98b40b
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/rest.css" />
-    <link rel="stylesheet" href="/css/icon/icon.css" />
-    <title>京东首页</title>
-</head>
-<body>
-    <div class="nav">
-        <div class="nav_main">
-            <div class="nav_right">
-                <ul>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">我的订单</a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">我的京东<i class="iconfont icon-xiangxiazhankai"></i></a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">京东会员</a></li> 
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="" class="red">企业采购</a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">商家服务</a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">网站导航</a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">手机京东</a></li>
-                    <li class="li_spacer"><span>|</span></li>
-                    <li><a href="">网站无障碍</a></li>
-                </ul>
-            </div>
-
-            <div class="nav_left">
-                <div class="iconfont">
-                    <i class="iconfont icon-daohangdizhi"></i>
-                    <span>四川</span>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- 商品列表 -->
-<div class="daohang">
-    <ul class="daohangxiao">
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">精选</ul>
-            </div>
-            <div class="xiao2">猜你喜欢</div>
-        </li>
-        <li class="nei1"></li>
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">智能先锋</ul>
-            </div>
-            <div class="xiao2">大电器城</div>
-        </li>
-        <li class="nei1"></li>
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">居家优品</ul>
-            </div>
-            <div class="xiao2">品质生活</div>
-        </li>
-        <li class="nei1"></li>
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">超市百货</ul>
-            </div>
-            <div class="xiao2">百货生鲜</div>
-        </li>
-        <li class="nei1"></li>
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">时尚达人</ul>
-            </div>
-            <div class="xiao2">美妆穿搭</div>
-        </li>
-        <li class="nei1"></li>
-        <li class="nei">
-            <div class="xiao1">
-                <ul class="tebiexiao">进口好物</ul>
-            </div>
-            <div class="xiao2">京东国际</div>
-        </li>
-    </ul>
-</div>
-<ul class="goodlist" title="看什么看傻呗">
-    <li class="gl-item">
-        <div class="mask1">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>99.80</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>核心技术 卷Ⅰ 基础知识 （原书第11版）
-                </em>
-                <i class="special-words">CoreJava第11版，Jolt大奖获奖作品，与Java编程思想、EffectiveJava、深入理解Java虚拟机堪称：Java四大名著</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop">
-            <span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span>
-        </div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-            <i class="icon-4">新品</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask2">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>52.70</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>从入门到精通（第五版）
-                </em>
-                <i class="special-words">297个应用实例+37个典型应用+30小时教学视频+海量开发资源库，丛书累计销量200多万册团购热线010-89113777</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="清华大学出版社">清华大学出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask3">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>75.60</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>编程思想（第四版）
-                </em>
-                <i class="special-words">Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉 团购热线010-89113777</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-            <i class="icon-4">新品</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask4">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>83.30</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>Effective<font class="keyword-color">java</font>中文版 （原书第三版）</em>
-                <i
-                    class="special-words">Java之父力荐；Jolt大奖获奖作品升级；与Java核心技术、Java编程思想、深入理解Java虚拟机堪称Java四大名著。正版图书双色印刷，阅读体验更佳</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-4">新品</i>
-            <i class="icon-2">放心购</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask5">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>90.30</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>深入理解<font class="keyword-color">java</font>虚拟机:JVM高级特效与最佳实践（第三版）</em>
-                <i class="special-words">周志明JVM新作，新增内容近50%，大厂面试知识点全覆盖。与《Java编程思想、EffectiveJava、Java核心技术》堪称“Java四大名著”</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-4">新品</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask6">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>35.20</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>项目开发实战入门（全彩版）
-                </em>
-            </a>
-        </div>
-        <div class="p-comment"><strong><a href="#" id="com">11万+</a>条评价</strong></div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="明日科技京东自营旗舰店">明日科技京东自营旗舰店</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons">
-            <i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-            <i class="icon-4">新品</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask7">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>63.20</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>IntelliJ IDEA入门与实战</em>
-                <i class="special-words">IntelliJIDEA（简称IDEA）是Java编程语言开发的集成环境</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="清华大学出版社">清华大学出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons"><i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-            <i class="icon-4">新品</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask8">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>53.30</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>设计模式与实践
-                </em>
-                <i class="special-words">精选Java实用设计模式，帮你有效解决开发应用程序过程中的常见问题，轻松应对各种规模项目的扩展和维护，设计模式就该这样学|Java核心技术系列丛书</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons"><i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask9">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>69.30</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>
-                    <font class="keyword-color">java</font>多线程编程核心技术（第二版）
-                </em>
-                <i class="special-words">技术畅销书全新升级，案例式讲解，逐一分析和验证每个技术点，通俗易懂，涵盖多线程编程的核心库、方法、原理，解决高并发环境下的业务瓶颈。</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="机械工业出版社">机械工业出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons"><i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-        </div>
-    </li>
-    <li class="gl-item">
-        <div class="mask10">找相似</div>
-        <div class="p-img"><a href="#"><img src="/css/images/1-201122104102.jpg"></a></div>
-        <div class="p-price">
-            <strong>
-                <em>¥</em>
-                <i>76.20</i>
-            </strong>
-        </div>
-        <div class="p-name">
-            <a href="#">
-                <em>C Primer Plus 第六版 中文版</em>
-                <i class="special-words">C语言程序设计入门自学教程，近百万程序员的启蒙教材，被誉为C语言百科全书，购书赠送99元e读电子书及在线编程环境，额外赠送199元C语言学习训练营</i>
-            </a>
-        </div>
-        <div class="p-comment">
-            <strong><a href="#" id="com">11万+</a>条评价</strong>
-        </div>
-        <div class="p-shop"><span class="shopname">
-                <a href="#" id="sn" title="人民邮电出版社">人民邮电出版社</a>
-                <a href="#" title="联系客服"><img src="/css/images/1-201122104102.jpg"></a>
-            </span></div>
-        <div class="p-icons"><i class="icon-1">自营</i>
-            <i class="icon-2">放心购</i>
-            <i class="icon-3">赠</i>
-        </div>
-    </li>
-</ul>
-<!-- 商品列表结束 -->
-</body>
-<<<<<<< HEAD </html>
-    -->
-    =======
-
-    </html>
-    >>>>>>> 0bbcd89ff278e3b3dee3abc26a94bfdd8b98b40b
