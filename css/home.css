@@ -58,6 +58,26 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+.mobile-static{
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 76px;
+    height: 76px;
+    background:#fff;
+    box-shadow: 0 2px 8px rgb(0 0 0);
+}
+.mobile-static img{
+    position: absolute;
+    top: 20px;
+    width: 66px;
+    height: 66px;
+}
+/* .mobile-static-qrcode img{
+    width: 66px;
+    height: 66px;
+    margin: 5px auto;
+} */
 /* 最顶部结束 */
 /* 头部开始 */
 .header{
@@ -210,6 +230,7 @@ button{
     top: 25px;
     right: 130px;
 }
+
 #settleup .cw-icon{
     position: relative;
     float: left;
@@ -220,34 +241,41 @@ button{
     line-height: 34px;
     border:1px solid #e3e4e5;
 }
+#settleup .cw-icon:hover{
+    border:1px solid #e1251b;
+}
 #settleup .cw-icon a{
     color: #e1251b;
     transition: color .2s ease
 }
-#navitems {
-    overflow: hidden;
+/* 小导航 */
+.navitems{
+    width: 776px;
     position: absolute;
-    left: 203px;
-    bottom: 0;
     height: 40px;
-    padding-top: 20px;
+    left: 203px;
+bottom: 0;;
+padding-top: 20px;
 }
-#navitems .spacer {
-    overflow: hidden;
+.navitems .spacer {
+    /* overflow: hidden; */
+    float: left;
     width: 0;
     height: 13px;
 }
-#navitems ul{
-    float: left;
+.navitems ul{
+   
+    /* float: left;
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-#navitems li{
+    padding-inline-start: 40px;  */
+} 
+
+.navitems li{
     float: left;
     margin-left: 1px;
 }
@@ -255,7 +283,7 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-#navitems a {
+.navitems li a {
     cursor: pointer;
     position: relative;
     display: block;
@@ -266,6 +294,9 @@ li {
     margin: 0 11px;
     /* -webkit-transition: color .2s ease; */
     transition: color .2s ease;
+}
+.navitems li a:hover{
+    color: #e1251b;
 }
 *{
     margin: 0;
