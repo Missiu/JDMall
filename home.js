@@ -96,10 +96,6 @@ function show() {
 }
 
 
-
-
-
-
 //尝试创建一个可以执行简单动画的函数
 /*
  * 参数：
@@ -235,3 +231,4 @@ function toggleClass(obj, cn) {
 	}
 
 }
+
