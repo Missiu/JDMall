@@ -77,4 +77,31 @@ window.addEventListener("load", function () {
 window.addEventListener("load",function(){
   var change = document.querySelectorAll(".xuan_right_b img");
   var textChange = document.querySelector(".textChange"); 
+  var changer = [318.00,360.00,360.00,440.00,412.00,359.00];
+  for(let i = 0;i<change.length;i++){
+    change[i].addEventListener("click", function () {
+      textChange.innerHTML = changer[i]+".00";
+    });
+  }
 })
+
+// 加1操作
+window.addEventListener("load",function(){
+  var text = document.querySelector(".jiaGou_input");
+  var jia = document.querySelector(".jia"); 
+  var jian = document.querySelector(".jian"); 
+  jia.addEventListener("click",function(){
+    text.value++;
+  })
+  jian.addEventListener("click",function(){
+    if(text.value>0){
+      text.value--;
+    }
+  });
+})
+
+  
+
+
+
+

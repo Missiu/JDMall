@@ -81,8 +81,9 @@ window.onload = function () {
     });
   };
 };
+
 function show() {
-  var s1 = "2022-03-26 16:00:00";
+  var s1 = "2022-12-30 16:00:00";
   s1 = new Date(s1.replace(/-/g, "/"));
   s2 = new Date();
   //获取得出时间差
@@ -232,3 +233,24 @@ function toggleClass(obj, cn) {
 
 }
 
+
+
+// 定位修改
+window.addEventListener("load",function(){
+  var location = document.querySelectorAll(".city-location a");
+  var title = document.querySelector(".title");
+  // console.log(location)
+  for(let i =0;i<location.length;i++){
+      location[i].addEventListener("click", function () {
+        for(let j = 0; j < location.length;j++){
+          if (
+            location[j].getAttribute("class") != location[i].getAttribute("class")
+          ) {
+            location[j].setAttribute("class", "");
+          }
+        }
+        location[i].setAttribute("class", "shanxi");
+        title.innerHTML = location[i].innerHTML;
+      });
+  }
+})
