@@ -17,6 +17,7 @@ header{
 li{
 	list-style: none;
 }
+/* 屏幕右方固定按钮开始 */
 .righter{
 	position: fixed;
     right: 0;
@@ -58,6 +59,8 @@ li{
 .righter2:hover{
 	background-color: #c81623;
 }
+
+/* 屏幕右方固定按钮结束 */
 #headerimg{
 	width: 1190px;
 	height: 80px;
@@ -93,7 +96,7 @@ li{
 #logo{
 	float:left;
 	margin-right: 220px;
-	margin-top: 23px;
+	margin-top: 30px;
 }
 #search{
 	margin-top: 27px;
@@ -161,7 +164,7 @@ li{
 #watch_daohang{
 	width: 100%;
 	height: 40px;
-	background-color: #262020;
+	background-color: #005DA3;
 }
 .meau{
 	width: 990px;
@@ -239,15 +242,50 @@ li{
 	text-align:left;
 }
 .info_three{
+	
 	float: left;
 	height: 890px;
 }
 .info_1{
 	width: 350px;
 }
+
+/* 放大镜 */
 .info_1_img{
+	position: relative;
 	width: 350px;
 	height: 350px;
+}
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background: #FEDE4F;
+    opacity: .5;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+.big {
+    display: none;
+    position: absolute;
+    left: 410px;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    z-index: 999;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.big img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .info_1_suo{
 	margin-top: 20px;
@@ -454,7 +492,7 @@ li{
 }
 #xuanZeYanSe{
  	font-size: 12px;
- 	height: 240px;
+ 	height: 125px;
  	margin-top: 10px;
 }
 .xuan_left{
@@ -485,6 +523,8 @@ li{
 	border:1px solid #DF3033;
 }
 .xuan_right_b img{
+	height: 40px;
+	width: 40px;
 	float: left;
 }
 #zengZhiBaoZhang{
