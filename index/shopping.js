@@ -1,43 +1,4 @@
-function dingweijs1() {
-  document.getElementById("dingwei1").style.display = "block";
-  document.getElementById("dingwei").style.backgroundColor = "white";
-}
-function dingweijs2() {
-  document.getElementById("dingwei1").style.display = "none";
-  document.getElementById("dingwei").style.backgroundColor = "#E3E4E5";
-}
-function myJdEnter() {
-  document.getElementById("myJd1").style.display = "block";
-  document.getElementById("myJd").style.backgroundColor = "white";
-}
-function myJdLeave() {
-  document.getElementById("myJd1").style.display = "none";
-  document.getElementById("myJd").style.backgroundColor = "#E3E4E5";
-}
-function qycgEnter() {
-  document.getElementById("qycg1").style.display = "block";
-  document.getElementById("qycg").style.backgroundColor = "white";
-}
-function qycgLeave() {
-  document.getElementById("qycg1").style.display = "none";
-  document.getElementById("qycg").style.backgroundColor = "#E3E4E5";
-}
-function khfwEnter() {
-  document.getElementById("khfw1").style.display = "block";
-  document.getElementById("khfw").style.backgroundColor = "white";
-}
-function khfwLeave() {
-  document.getElementById("khfw1").style.display = "none";
-  document.getElementById("khfw").style.backgroundColor = "#E3E4E5";
-}
-function wzdhEnter() {
-  document.getElementById("wzdh1").style.display = "block";
-  document.getElementById("wzdh").style.backgroundColor = "white";
-}
-function wzdhLeave() {
-  document.getElementById("wzdh1").style.display = "none";
-  document.getElementById("wzdh").style.backgroundColor = "#E3E4E5";
-}
+
 
 window.addEventListener("load", function () {
   var info_1_img = document.querySelector(".info_1_img");
@@ -89,3 +50,31 @@ window.addEventListener("load", function () {
     bigIMg.style.top = -bigY + "px";
   });
 });
+
+
+// 商品切换
+window.addEventListener("load", function () {
+  var li = document.querySelectorAll(".info_1_suo li");
+  var img = document.querySelector(".information_img");
+  var bigimg = document.querySelector(".bigImg");
+  
+  for (let i = 1; i < li.length-1; i++) {
+    li[i].addEventListener("mouseover", function () {
+      img.setAttribute("src", "/img/object" + [i] + ".jpg");
+      for(let j = 1; j < li.length; j++){
+        if(li[j].getAttribute('class') != li[i].getAttribute('class')){
+          li[j].setAttribute('class','')
+        }
+      }
+      li[i].setAttribute("class", "info_1_suo_li");
+      bigimg.setAttribute("src", "/img/big" + [i] + ".jpg");
+    });
+  }
+});
+
+
+// 价格切换
+window.addEventListener("load",function(){
+  var change = document.querySelectorAll(".xuan_right_b img");
+  var textChange = document.querySelector(".textChange"); 
+})
