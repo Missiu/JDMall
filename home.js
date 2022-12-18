@@ -83,7 +83,7 @@ window.onload = function () {
 };
 
 function show() {
-  var s1 = "2022-12-30 16:00:00";
+  var s1 = "2022-12-29 16:00:00";
   s1 = new Date(s1.replace(/-/g, "/"));
   s2 = new Date();
   //获取得出时间差
@@ -254,3 +254,22 @@ window.addEventListener("load",function(){
       });
   }
 })
+
+
+// 监听页面滚动
+window.addEventListener("scroll", function () {
+  const scrollTop = document.documentElement.scrollTop;
+  // 监听吸顶搜索栏的
+  if (scrollTop > 400) {
+    document.querySelector(".fixedSearch").style.display = "block";
+  } else {
+    document.querySelector(".fixedSearch").style.display = "none";
+  }
+
+  // 监听吸顶二级tab的
+  if (scrollTop > 800) {
+    document.querySelector(".fixedTab").style.display = "flex";
+  } else {
+    document.querySelector(".fixedTab").style.display = "none";
+  }
+});
